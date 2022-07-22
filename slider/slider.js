@@ -66,10 +66,11 @@ let slider = function(config){
 	}
 }
 
+// new instance
 let sample = new slider({
 	sliderBody: document.getElementById('test-slider')
 });
 
-
+// initialize
 sample.init()
 
