@@ -1,0 +1,47 @@
+.slider-container{
+	background-color: cyan;
+	width: 375px
+}
+
+.slider{
+	display: flex; 
+	flex-direction: row; 
+	width:100%; 
+	
+	overflow-x: hidden;
+}
+
+.slider-el,.slider-el > img{
+	width: fill-available;
+	width: -webkit-fill-available;
+	width: 100%;
+	flex-shrink: 0; 
+	flex-grow: 0; 
+	flex-basis: 1; 
+	
+}
+.slider-container{
+    position: relative;
+}
+/* you can modify buttons style here */
+.slider-controls-previous, .slider-controls-next{
+    position: absolute;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    border: 0;
+    color: white;
+    font-size: 20px;
+}
+
+.slider-controls-previous{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slider-controls-next{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
